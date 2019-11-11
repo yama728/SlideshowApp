@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		396C03E123765F2200F838CC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C03E023765F2200F838CC /* ResultViewController.swift */; };
 		3982314223756C9000FD5A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3982314123756C9000FD5A4A /* AppDelegate.swift */; };
 		3982314423756C9000FD5A4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3982314323756C9000FD5A4A /* ViewController.swift */; };
 		3982314723756C9000FD5A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3982314523756C9000FD5A4A /* Main.storyboard */; };
 		3982314923756C9100FD5A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3982314823756C9100FD5A4A /* Assets.xcassets */; };
 		3982314C23756C9100FD5A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3982314A23756C9100FD5A4A /* LaunchScreen.storyboard */; };
+		3982315623756D4A00FD5A4A /* 3 in Resources */ = {isa = PBXBuildFile; fileRef = 3982315323756D4A00FD5A4A /* 3 */; };
+		3982315723756D4A00FD5A4A /* 2 in Resources */ = {isa = PBXBuildFile; fileRef = 3982315423756D4A00FD5A4A /* 2 */; };
+		3982315823756D4A00FD5A4A /* 1 in Resources */ = {isa = PBXBuildFile; fileRef = 3982315523756D4A00FD5A4A /* 1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		396C03E023765F2200F838CC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		3982313E23756C9000FD5A4A /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3982314123756C9000FD5A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3982314323756C9000FD5A4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		3982314823756C9100FD5A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3982314B23756C9100FD5A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3982314D23756C9100FD5A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3982315323756D4A00FD5A4A /* 3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3; sourceTree = "<group>"; };
+		3982315423756D4A00FD5A4A /* 2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2; sourceTree = "<group>"; };
+		3982315523756D4A00FD5A4A /* 1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				3982314823756C9100FD5A4A /* Assets.xcassets */,
 				3982314A23756C9100FD5A4A /* LaunchScreen.storyboard */,
 				3982314D23756C9100FD5A4A /* Info.plist */,
+				3982315523756D4A00FD5A4A /* 1 */,
+				3982315423756D4A00FD5A4A /* 2 */,
+				3982315323756D4A00FD5A4A /* 3 */,
+				396C03E023765F2200F838CC /* ResultViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -124,7 +136,10 @@
 			files = (
 				3982314C23756C9100FD5A4A /* LaunchScreen.storyboard in Resources */,
 				3982314923756C9100FD5A4A /* Assets.xcassets in Resources */,
+				3982315723756D4A00FD5A4A /* 2 in Resources */,
+				3982315823756D4A00FD5A4A /* 1 in Resources */,
 				3982314723756C9000FD5A4A /* Main.storyboard in Resources */,
+				3982315623756D4A00FD5A4A /* 3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +152,7 @@
 			files = (
 				3982314423756C9000FD5A4A /* ViewController.swift in Sources */,
 				3982314223756C9000FD5A4A /* AppDelegate.swift in Sources */,
+				396C03E123765F2200F838CC /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
