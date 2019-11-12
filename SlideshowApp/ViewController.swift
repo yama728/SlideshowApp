@@ -82,6 +82,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    @IBAction func button(_ sender: Any) {
+        
+            self.timer.invalidate()   // タイマーを停止する
+        
+    }
+    
     @objc func updateTimer(_ timer: Timer) {
         
         self.timer_sec += 2
