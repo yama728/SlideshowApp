@@ -26,15 +26,6 @@
                                     <constraint firstAttribute="height" constant="128" id="Vb8-Ak-C1A"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WY-ya-sZY">
-                                <rect key="frame" x="40" y="86" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="SEP-hU-8BF"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="xBJ-xo-vK5" kind="show" identifier="next" id="h0w-jZ-pfF"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="I1c-ZA-zUl">
                                 <rect key="frame" x="48" y="343" width="224" height="30"/>
                                 <subviews>
@@ -61,6 +52,17 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQx-CY-K9Q">
+                                <rect key="frame" x="40" y="86" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0ya-e8-xSI"/>
+                                    <constraint firstAttribute="width" constant="240" id="8pj-TX-6jJ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="imageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89k-fz-n1h"/>
+                                    <segue destination="xBJ-xo-vK5" kind="show" id="RcX-PX-F5h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -68,19 +70,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mEK-cb-uUz" secondAttribute="trailing" constant="40" id="8ve-Pl-cYs"/>
                             <constraint firstItem="mEK-cb-uUz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="D3c-pB-nwG"/>
                             <constraint firstItem="I1c-ZA-zUl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="D8H-QC-DMp"/>
-                            <constraint firstItem="3WY-ya-sZY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="K5x-pg-1gn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DQx-CY-K9Q" secondAttribute="trailing" constant="40" id="IpZ-II-rdg"/>
+                            <constraint firstItem="DQx-CY-K9Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="Kld-57-SVb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I1c-ZA-zUl" secondAttribute="trailing" constant="48" id="TJ5-jn-A8S"/>
                             <constraint firstItem="mEK-cb-uUz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="Yy5-Tr-psE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3WY-ya-sZY" secondAttribute="trailing" constant="40" id="lbq-eq-tDD"/>
-                            <constraint firstItem="3WY-ya-sZY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="tFi-Hf-eOV"/>
+                            <constraint firstItem="I1c-ZA-zUl" firstAttribute="top" secondItem="DQx-CY-K9Q" secondAttribute="bottom" constant="129" id="bM0-cl-dcR"/>
                             <constraint firstItem="I1c-ZA-zUl" firstAttribute="top" secondItem="mEK-cb-uUz" secondAttribute="bottom" constant="129" id="wB1-6O-cdt"/>
+                            <constraint firstItem="DQx-CY-K9Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="wPD-6S-i6U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="lzD-TO-pGF" id="XaI-Rp-tzL"/>
-                        <outlet property="button" destination="PT1-us-LXc" id="32A-k8-jws"/>
+                        <outlet property="button" destination="PT1-us-LXc" id="wH8-hc-toM"/>
                         <outlet property="gazou" destination="mEK-cb-uUz" id="bdC-zT-5aq"/>
+                        <outlet property="imageButton" destination="DQx-CY-K9Q" id="Xu5-VA-TA8"/>
                         <outlet property="nextButton" destination="40O-Uq-B86" id="33K-U6-E14"/>
                     </connections>
                 </viewController>

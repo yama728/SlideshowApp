@@ -5,19 +5,20 @@
 //  Created by NATSUYA YAMASHIRO on 2019/11/08.
 //  Copyright © 2019 natsuya.yamashiro. All rights reserved.
 //
-
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
-
+    
     @IBOutlet weak var gazou: UIImageView!
     
     @IBOutlet weak var nextButton: UIButton!
     
     @IBOutlet weak var backButton: UIButton!
     
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var imageButton: UIButton!
     
+    @IBOutlet weak var button: UIButton!
+
     
     var imageIndex = 0
     var timer: Timer!
@@ -32,7 +33,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let imageView = images[0]
         gazou.image = imageView
     }
-
+    
     @IBAction func nextGazou(_ sender: Any) {
         
         if imageIndex == 2 {
@@ -82,11 +83,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    @IBAction func button(_ sender: Any) {
-        
-            self.timer.invalidate()   // タイマーを停止する
-        
-    }
     
     @objc func updateTimer(_ timer: Timer) {
         
@@ -111,5 +107,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // 他の画面から segue を使って戻ってきた時に呼ばれる
     }
     
-}
+    @IBAction func imageButton(_ sender: Any) {
+        
+        
+        
+        
+                if timer.isValid == true {
+                    timer.invalidate()
+                    button.setTitle("再生", for: .normal)
+                    backButton.isEnabled = true
+                    nextButton.isEnabled = true
+               
+            }
+        }
 
+
+    
+
+}
